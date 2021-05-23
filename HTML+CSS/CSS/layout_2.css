@@ -1,0 +1,38 @@
+.page-header{
+      display: block;
+      padding: 1em;
+      background: lightgray;
+
+}
+.contant-container{
+      font-size: 0;
+}
+.contant-section{
+      display: inline-block;
+      /*inline --> width,hright를 지정하지 못함*/
+      /*따라서 disply : inline-block 을 사용*/
+      vertical-align: top;
+      /*아래쪽 정렬에서 수직 정렬로 바꿈*/
+      padding: 1em;
+      /*em --> body의 폰트 크기!*/
+      font-size: 1rem;
+      /*root em --> rem*/
+}
+.contant-section-a{
+      width: calc(30% - 2em);
+      /*padding 을 양쪽에 1em씩 있기 때문*/
+      /*calc 너비를 더하고 빼는 태그*/
+      background: yellow;
+}
+.contant-section-b{
+      width: calc(70% - 2em);
+      background: green;
+}
+.page-footer{
+      padding: 1em;
+      background: blue;
+}
+.global-menu-link{
+      display: inline;
+      background: blueviolet;
+}
