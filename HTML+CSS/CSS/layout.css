@@ -1,0 +1,23 @@
+.page-header{
+      display: block;
+      padding: 1em;
+      background: lightgray;
+
+}
+.contant-section{
+      padding: 1em;
+}
+.contant-section-a{
+      background: yellow;
+}
+.contant-section-b{
+      background: green;
+}
+.pagr-footer{
+      padding: 1em;
+      background: blue;
+}
+.global-menu-link{
+      display: inline;
+      background: blueviolet;
+}
