@@ -1,0 +1,40 @@
+.page_header{
+      background: #6c5ce7;
+      padding: 1em;
+      opacity: 0.5;
+}
+
+a{
+      text-decoration: none;
+      color: black;
+}
+a:hover{
+      color: red ;
+
+}
+.page_title{
+      padding-bottom: 1em;
+}
+.contants_container{
+      font-size: 0;
+      background: #00cec9;
+}
+.contants_section{
+      display: inline-block;
+      padding: 1em;
+      font-size: 1rem;
+      vertical-align: top;
+
+}
+.contants_section_a{
+      width: calc(70% - 2em);
+      background: #fd79a8;
+}
+.contants_section_b{
+      width: calc(30% - 2em);
+      background: #ff7675;
+}
+.page_footer{
+      padding: 1em;
+      background: #0984e3;
+}
