@@ -4,19 +4,32 @@
       background: lightgray;
 
 }
-.contant-container{
+/* .contant-container{
       font-size: 0;
+} */
+.contant-container:after {     
+      content: "";
+      clear: both;
+      display: block;
+      height: 0;
+      visibility: hidden;
+
+}
+.contant-container{
+      background: #000;
 }
 .contant-section{
-      display: inline-block;
+      /* display: inline-block; */
       /*inline --> width,hright를 지정하지 못함*/
       /*따라서 disply : inline-block 을 사용*/
-      vertical-align: top;
+      /* vertical-align: top; */
       /*아래쪽 정렬에서 수직 정렬로 바꿈*/
+      float: left;
       padding: 1em;
       /*em --> body의 폰트 크기!*/
       font-size: 1rem;
       /*root em --> rem*/
+      
 }
 .contant-section-a{
       width: calc(30% - 2em);
@@ -28,9 +41,14 @@
       width: calc(70% - 2em);
       background: green;
 }
+
+/* .clear{
+      clear: left;
+} */
 .page-footer{
       padding: 1em;
-      background: blue;
+      background: lightblue;
+      /* clear: left; */
 }
 .global-menu-link{
       display: inline;
