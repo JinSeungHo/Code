@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>기본 레이아웃 설정</title>
+      <link rel="stylesheet" href="../CSS/CSS_reset.css">
+      <style>
+            .page{
+                  display: flex;
+                  flex-direction: column;
+            }
+            a{ 
+                  text-decoration: none;
+                  color: black;
+            }
+            li:hover{
+                  background-color: #fff000;
+            }
+            li{
+
+                  background-color: #fff;
+                  width: 150px;
+                  height: 40px;
+                  /* margin: 20px; */
+                  text-align: center;
+                  line-height: 40px;
+                  border: 1px solid #000;
+                  border-radius: 40px;
+            }
+            .page-header,.page-footer{
+                  display: block;      
+                  background: #fff000;
+                  padding: 1em;
+            }
+            .page-header h1{
+                  font-size: 30px;
+                  text-align: center;
+                  margin: 10px;
+                  padding-bottom: 40px;
+                  
+            }
+            .global-menu ul{
+                  font-size: 20px;
+                  display: flex;
+                  justify-content: space-between;
+            }
+            .contants-container{
+                  flex: 1;
+                  /* padding: 10px; */
+                  border: 1px solid #000;
+            }
+            .contants-section{
+                
+                  padding: 10px;
+                  margin: 10px;
+
+            }
+            .contants-section-a{
+                  background-color: beige;
+            }
+            .contants-section-b{
+                  background-color: pink;
+            }
+            .page-footer{
+                  background: aqua;
+                  
+            }
+      </style>
+</head>
+
+<body>
+      <article class="page">
+            <header class="page-header">
+                  <h1><strong>이 페이지의제목</strong></h1>
+                  <nav class="global-menu">
+                        <ul>
+                              <a href="#"><li>가</li></a>
+                              <a href="#"><li>가</li></a>
+                              <a href="#"><li>가</li></a>
+                              <a href="#"><li>가</li></a>
+                              <a href="#"><li>가</li></a>
+                        </ul>
+                  </nav>
+            </header>
+            <div class="contants-container">
+                  <section class="contants-section contants-section-a">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident mollitia ipsa dolor neque,
+                        sit veritatis porro, officia blanditiis voluptates sed reiciendis maiores modi! Soluta, esse
+                        accusamus! Ad placeat natus hic?
+                        Voluptatibus saepe dicta fugiat, reiciendis totam ex quisquam aliquid laudantium nihil corrupti
+                        in porro odit maiores amet, minus eos est. Rerum, quia nobis quas soluta odit iste iure dolor
+                        excepturi.
+                  </section>
+                  <section class="contants-section contants-section-b">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident mollitia ipsa dolor neque,
+                        sit veritatis porro, officia blanditiis voluptates sed reiciendis maiores modi! Soluta, esse
+                        accusamus! Ad placeat natus hic?
+                        Voluptatibus saepe dicta fugiat, reiciendis totam ex quisquam aliquid laudantium nihil corrupti
+                        in porro odit maiores amet, minus eos est. Rerum, quia nobis quas soluta odit iste iure dolor
+                        excepturi.
+                  </section>
+            </div>
+            <footer class="page-footer">
+                  <p class="copyright">2021 &copy; 안녕하세요 </p>
+            </footer>
+      </article>
+</body>
+
+</html>
