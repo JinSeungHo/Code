@@ -7,17 +7,16 @@
       <title>Flex_box</title>
       <style>
             .container{
+                  height: 800px;
                   display: flex;
-                  /* flex-direction: column-reverse; */
-                  /* justify-content: space-around; */
-
-                  height: 80vh;
-                  background: gray;
-
+                  flex-direction: column;
+                  background-color: #fff000;
+                  align-items: stretch;
+                  
             }
             .item{
                   flex-grow: 1;
-
+                  flex-basis: auto;
 
 
                   border: 3px solid black;
@@ -25,6 +24,9 @@
                   padding: 2em;
 
 
+            }
+            .item:nth-child(1){
+                  flex-grow: 3;
             }
       </style>
 </head>
