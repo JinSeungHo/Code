@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> 3일차 ( 1 ) </title>
+      <style>
+            .oneClass{
+                  font-size: 32px;
+            }
+            .twoClass{
+                  color: red;
+            }
+            #oneId{
+                  font-style: italic;
+
+            }
+            #twoId{
+                  background-color:aqua;
+            }
+      </style>
+</head>
+<body>
+      <!-- Class는 중첩될 수 있고, 유일하지 않아도 됩니다. -->
+      <div class="oneClass twoClass">Class 입니다.</div>
+      <!-- ID는 중첩될 수 없고, 유일 해야합니다. -->
+      <!-- 실행이 되지만 권고하지 않음. -->
+      <div id="oneId twoId">ID 입니다.</div>
+      <div id="oneId">ID 입니다.</div>
+      <div id="twoId">ID 입니다.</div>
+      <!-- 두개 사용 X 유일해야한다. -->
+      <div id="oneId">ID 입니다.</div>
+      <div class="twoClass">Class 입니다.</div>
+      
+</body>
+</html>

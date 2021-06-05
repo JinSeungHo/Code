@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> 3일차 ( 2 ) </title>
+      <style>
+            .one {
+                  font-size: 32px;
+            }
+
+            .two {
+                  font-size: 2em;
+            }
+
+            .three {
+                  font-size: 2rem;
+            }
+
+            .four {
+                  width: 50%;
+                  height: 100px;
+                  background: red;
+            }
+
+            .five {
+                  width: 50vw;
+                  /* vh, vw */
+                  height: 100px;
+                  background: aqua;
+            }
+
+            .six {
+                  width: 500px;
+            }
+      </style>
+</head>
+
+<body>
+      <!-- 16px -->
+      <div class="two">
+            <!-- 32px -->
+            <div class="two">
+                  <!-- 64px -->
+                  <div class="two">
+                        <!-- 128px -->
+                        hello
+                  </div>
+            </div>
+      </div>
+      <!-- 16px -->
+      <div class="two">
+            <!-- 32px -->
+            <div class="two">
+                  <!-- 64px -->
+                  <div class="three">
+                        <!-- 32px -->
+                        hello
+                  </div>
+            </div>
+      </div>
+      <div class="six">
+            <div class="four">
+                  <!-- width : % 는 부모 (500px) 의 50%이다. -->
+                  hello
+            </div>
+      </div>
+      <div class="four">
+            <div class="five">
+                  hello
+            </div>
+      </div>
+      <div>hello</div>
+      <div>hello</div>
+</body>
+
+</html>
