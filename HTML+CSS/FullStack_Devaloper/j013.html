@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+            p{
+                  color: green;
+                  font: 900;
+                  font-size: 30px;
+            }
+      </style>
+</head>
+<body>
+
+      <h1>Hello world!</h1>
+      <p id="result">world</p>
+      <p id="answer">hello</p>
+      <p id="expression">hello</p>
+      
+
+
+      <script>
+            function 원의넓비(반지름){
+                  return 반지름 * 반지름 * 3.14
+            }
+            function pow(x, n){
+                  return x ** n
+            }
+            let sum = function(a, b){
+                  return a + b
+            }
+            // document.getElementById('result').innerHTML = 원의넓비(10)
+            // let 원의넓이2 = (반지름, 원주율) => 반지름 * 반지름 * 원주율
+            // document.getElementById('result').innerHTML = 원의넓이2(10, 3.14)
+
+            let 원의넓이3 = (반지름) => 반지름 * 반지름 * 3.14
+            document.getElementById('result').innerHTML = 원의넓이3(10)
+            document.getElementById('answer').innerHTML = pow(2, 3)
+            document.getElementById('expression').innerHTML = sum(2, 3)
+      </script>
+
+
+</body>
+</html>

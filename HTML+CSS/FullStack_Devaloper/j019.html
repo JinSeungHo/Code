@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+
+<body>
+      <script>
+            let data = [{
+                        "_id": "60d6d857b4ad75e231ba97ed",
+                        "index": 0,
+                        "age": 31,
+                        "eyeColor": "brown",
+                        "name": "Bernard Ellis",
+                        "gender": "male",
+                        "company": "TERRAGO"
+                  },
+                  {
+                        "_id": "60d6d8578d9c3436478c0c19",
+                        "index": 1,
+                        "age": 29,
+                        "eyeColor": "blue",
+                        "name": "Abby Hess",
+                        "gender": "female",
+                        "company": "BALOOBA"
+                  },
+                  {
+                        "_id": "60d6d85750b2621c9d032ad1",
+                        "index": 2,
+                        "age": 24,
+                        "eyeColor": "green",
+                        "name": "Welch Leon",
+                        "gender": "male",
+                        "company": "GEEKOLA"
+                  },
+                  {
+                        "_id": "60d6d85763d783224a46edd4",
+                        "index": 3,
+                        "age": 27,
+                        "eyeColor": "blue",
+                        "name": "Lynette Valentine",
+                        "gender": "female",
+                        "company": "AMTAP"
+                  },
+                  {
+                        "_id": "60d6d857cb971dc0cdabc5e8",
+                        "index": 4,
+                        "age": 26,
+                        "eyeColor": "brown",
+                        "name": "Alyson Cooke",
+                        "gender": "female",
+                        "company": "CORIANDER"
+                  },
+                  {
+                        "_id": "60d6d8578956a6dcfa2d005a",
+                        "index": 5,
+                        "age": 30,
+                        "eyeColor": "blue",
+                        "name": "Herrera Barnes",
+                        "gender": "male",
+                        "company": "EMERGENT"
+                  },
+                  {
+                        "_id": "60d6d85754fb39e32d5efd52",
+                        "index": 6,
+                        "age": 36,
+                        "eyeColor": "blue",
+                        "name": "Noreen Hatfield",
+                        "gender": "female",
+                        "company": "MAGMINA"
+                  }
+            ]
+
+            console.log(data[0])
+            console.log(data[0]['gender'])
+            console.log(data[0]['age'])
+            // console.log(data[0].name)
+
+            if (data[0]['age'] <= 39) {
+                  console.log('30대 입니다.')
+            }
+            else if (data[0]['age'] <= 29) {
+                  console.log('20대 입니다.')
+            }
+            else{
+                  console.log('40대 이상 이거나 10대 입니다.')
+            }
+            
+      </script>
+</body>
+
+</html>
