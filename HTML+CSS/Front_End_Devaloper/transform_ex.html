@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>transform 연습</title>
+      <style>
+            div{
+                  width: 200px;
+                  height: 100px;
+                  background: rgb(22, 22, 102);
+                  border: 1px solid black;
+            }
+            div:nth-child(2n){
+                  width: 200px;
+                  height: 100px;
+                  background: blue;
+                  border: 1px solid black;
+            }
+
+            .one{
+                  transform: rotate(20deg);
+            }
+            .two{
+                  transform: translate(20px, 40px);
+                  transform: rotate(130deg);
+            }
+            .three{
+                  transform: translate(100px, 100px);
+                  transform: scale(2,2);
+            }
+            .four{
+                  transform: rotate(50deg)
+            }
+      </style>
+</head>
+<body>
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="four">4</div>
+</body>
+</html>
