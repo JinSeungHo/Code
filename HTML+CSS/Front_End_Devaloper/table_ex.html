@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>테이블 연습</title>
+      <style>
+            table {
+                  border-collapse: collapse;
+            }
+
+            th,
+            td {
+                  width: 100px;
+                  height: 50px;
+                  text-align: center;
+                  color: black;
+                  font-size: 20px;
+                  border: 2px solid black;
+            }
+
+            th {
+                  background-color: pink;
+                  font-size: 25px;
+            }
+
+            tfoot tr td:first-child{
+                  background-color: blue;
+                  color: white;
+                  font-size: 25px;
+            }
+            /* .average {
+                  background-color: blue;
+                  color: white;
+                  font-size: 25px;
+
+            } */
+      </style>
+</head>
+
+<body>
+      <table>
+            <caption>3-1반 역사성적표</caption>
+            <thead>
+                  <tr>
+                        <th scope="col">이름</th>
+                        <th scope="col">반</th>
+                        <th scope="col">번호</th>
+                        <th scope="col">점수</th>
+                  </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                        <td>한재현</td>
+                        <td rowspan="3">1반</td>
+                        <td>1번</td>
+                        <td>70점</td>
+                  </tr>
+                  <tr>
+                        <td>랩몬</td>
+                        <!-- <td></td> -->
+                        <td>2번</td>
+                        <td>90점</td>
+                  </tr>
+                  <tr>
+                        <td>슈가</td>
+                        <!-- <td></td> -->
+                        <td>3번</td>
+                        <td>93점</td>
+                  </tr>
+            </tbody>
+            <tfoot>
+                  <tr>
+                        <td colspan="3">평균</td>
+                        <!-- <td></td> -->
+                        <!-- <td></td> -->
+                        <td>84점</td>
+                  </tr>
+            </tfoot>
+      </table>
+</body>
+
+</html>

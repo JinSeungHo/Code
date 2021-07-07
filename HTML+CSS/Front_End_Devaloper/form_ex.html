@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>실습</title>
+      <style>
+            body {
+                  margin: 0;
+                  padding: 50px;
+            }
+
+            .study-type,
+            .study-lastword,
+            .button{
+                  margin-top: 20px;
+            }
+
+            [class*="study"] {
+                  font-size: 20px;
+                  font-weight: 900;
+            }
+
+            .study-type label {
+                  display: block;
+
+            }
+
+            .study-lastword label {
+                  display: block;
+            }
+      </style>
+</head>
+
+<body>
+      <form>
+            <fieldset>
+                  <legend>웹프론트엔드 개발반 어떠세요?</legend>
+                  <div class="test">
+                        <input type="radio" name="test" id="vary good"><label for="vary good">아주좋아요</label>
+                        <input type="radio" name="test" id="good"><label for="good">좋아요</label>
+                        <input type="radio" name="test" id="nomal"><label for="nomal">보통</label>
+                        <input type="radio" name="test" id="bad"><label for="bad">싫어요</label>
+                        <input type="radio" name="test" id="vary bad"><label for="vary bad">매우싫어요</label>
+                  </div>
+                  <div class="study-type">
+                        <label for="study_type">만약 다른스터디를 하고싶다면?</label>
+                        <select name="study_type" id="study_type">
+                              <option value="자바스크립트">자바스크립트</option>
+                              <option value="HTML">HTML</option>
+                              <option value="CSS">CSS</option>
+                              <option value="Python">Python</option>
+                        </select>
+                  </div>
+                  <div class="study-lastword">
+                        <label for="study_lastword">마지막으로 하고싶은 말</label>
+                        <textarea name="" id="study_lastword" cols="40" rows="10"></textarea>
+                  </div>
+                  <div class="button">
+                        <button type="submit">전송하기</button>
+                        <button type="reset">다시 작성하기</button>
+                  </div>
+            </fieldset>
+      </form>
+</body>
+
+</html>

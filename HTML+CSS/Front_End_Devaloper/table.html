@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>table실습</title>
+      <style>
+            table {
+                  /* 테이블사이의 여백 삭제 */
+                  border-collapse: collapse;
+            }
+
+            th,
+            td {
+                  width: 100px;
+                  height: 50px;
+                  color: black;
+                  text-align: center;
+                  border: 2px solid blue;
+            }
+            .col1{
+                  background-color: #fff;
+            }
+            .col2{
+                  background-color: #00ff00;
+            }
+            .col3{
+                  background-color: #00ffff;
+            }
+      </style>
+</head>
+
+<body>
+      <table>
+            <caption>제목입니다</caption>
+            <!-- thead-> 필수는 아님 -->
+            <colgroup>
+                  <col class="col1">
+                  <col class="col2">
+                  <col class="col3">
+                 
+            </colgroup>
+            <thead>
+                  <tr>
+                        <th scope="col">1월</th>
+                        <th scope="col">2월</th>
+                        <th scope="col">3월</th>
+                  </tr>
+            </thead>
+            <!-- tbody-> 필수 -->
+            <tbody>
+                  <tr>
+                        <td>눈사람</td>
+                        <td>눈사람</td>
+                        <td rowspan="2">눈사람</td>
+                  </tr>
+                  <tr>
+                        <td colspan="2">눈싸움</td>
+                        <!-- <td>눈싸움</td> -->
+                        <!-- <td>눈싸움</td> -->
+                  </tr>
+            </tbody>
+      </table>
+
+      <table>
+            <tr>
+                  <th>1월</th>
+                  <td></td>
+                  <td></td>
+            </tr>
+            <tr>
+                  <th>2월</th>
+                  <td></td>
+                  <td></td>
+            </tr>
+            <tr>
+                  <th>3월</th>
+                  <td></td>
+                  <td></td>
+            </tr>
+      </table>
+</body>
+
+</html>
