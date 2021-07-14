@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>로그인 화면 구현</title>
+      <link rel="stylesheet" type="text/css" href="../CSS/CSS_reset.css">
+      <style>
+            body {
+                  font-size: 12px;
+            }
+
+            a {
+                  text-decoration: none;
+                  /* color: white; */
+            }
+
+            .login-cont {
+                  display: inline-block;
+                  width: 350px;
+                  height: 150px;
+                  padding: 16px 16px 12px 17px;
+                  background-color: #f7f9fa;
+
+            }
+
+            .login-cont p {
+                  color: grey;
+
+            }
+
+            .login-button {
+                  margin-top: 11px;
+                  background-color: #19ce60;
+                  padding: 15px 0px;
+                  font-size: 13px;
+                  font-weight: 700;
+
+
+
+            }
+
+
+            .login-button img {
+                  margin-right: 5px;
+                  width: 60px;
+                  height: 12px;
+
+
+            }
+
+            .login-button-text {
+                  display: block;
+                  color: white;
+                  text-align: center;
+            }
+
+
+
+            .buttons {
+                  margin-top: 14px;
+
+
+            }
+
+            .buttons .btn-id {
+                  /* color: #404040; */
+                  float: left;
+            }
+
+            .buttons .btn-id a {
+                  color: #404040;
+            }
+
+            .buttons .btn-id a:hover {
+                  color: red;
+                  text-decoration: underline;
+            }
+
+            .buttons .btn-id img {
+                  width: 10px;
+                  height: 14px;
+                  margin-right: 5px;
+
+            }
+
+            .buttons .btn-id span {
+                  display: inline-block;
+                  width: 3px;
+                  height: 3px;
+                  background: #d7dce0;
+                  vertical-align: middle;
+                  border-radius: 1px;
+            }
+
+            .buttons .btn-register {
+                  /* color: #505050; */
+                  float: right;
+            }
+
+            .buttons .btn-register a {
+                  color: #505050;
+
+            }
+
+
+            .buttons .btn-register a:hover {
+                  color: red;
+                  text-decoration: underline;
+
+            }
+
+            .buttons .btn-register img {
+                  width: 11px;
+                  height: 11px;
+                  margin-right: 5px;
+            }
+      </style>
+
+</head>
+
+<body>
+      <div class="login-cont">
+            <p>네이버를 더 안전하고 편리하게 이용하세요</p>
+            <div class="login-button">
+
+
+                  <a class="login-button-text" href="#">
+                        <img src="./IMG/title.png" alt="로그인">로그인
+                  </a>
+
+            </div>
+
+            <div class="buttons">
+                  <div class="btn-id">
+                        <img src="./IMG/lock.png" alt="아이디"><a href="#">아이디</a>
+                        <span></span>
+                        <a href="#">비밀번호찾기</a>
+                  </div>
+                  <div class="btn-register">
+                        <img src="./IMG/user.png" alt="회원가입"><a href="#">회원가입</a>
+                  </div>
+            </div>
+
+      </div>
+</body>
+
+</html>
