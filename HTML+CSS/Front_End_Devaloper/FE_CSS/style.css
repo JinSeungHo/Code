@@ -1,6 +1,82 @@
 @charset "utf-8";
+body {
+    background-color: #5b2386;
+}
 
-.tit-raw .img-tit{
-      width: 564px;
-      height: 112px;
+.tit-law .img-tit {
+    display: block;
+    width: 564px;
+    height: 112px;
+    margin: 194px auto 0px auto;
+    /*--> 넓이값이 꼭 있어야한다 */
+}
+
+.tit-law {
+    position: relative;
+}
+
+.tit-law::after {
+    display: block;
+    content: "";
+    width: 225px;
+    height: 225px;
+    background-image: url("/IMG/1mantime/title_bg.png");
+    background-size: 225px;
+    position: absolute;
+    margin: -112px 0px 0px -112px;
+    top: 50%;
+    /* margin-top: -112px; */
+    left: 50%;
+    z-index: -1;
+    /* margin-left: -112px; */
+    /* 가장 가까운 요소에 포지션이 있으면 위치를 지정할수 있음 */
+}
+
+.img-txt {
+    display: block;
+    width: 486px;
+    height: 29px;
+    margin: 125px auto 78px auto;
+}
+
+.txt-desc {
+    width: 390px;
+    height: 85px;
+    margin: 0px auto;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.txt-desc strong {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.txt-desc::before,
+.txt-desc::after {
+    display: block;
+    width: 42px;
+    height: 35px;
+    content: "";
+    background-image: url(../IMG/1mantime/txt-left.png);
+    background-size: 42px 35px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.txt-desc::after {
+    display: block;
+    width: 42px;
+    height: 35px;
+    content: "";
+    background-image: url(../IMG/1mantime/txt-right.png);
+    background-size: 42px 35px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
 }
