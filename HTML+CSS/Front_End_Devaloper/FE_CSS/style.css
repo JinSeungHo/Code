@@ -1,6 +1,7 @@
 @charset "utf-8";
 body {
     background-color: #5b2386;
+    text-align: center;
 }
 
 .tit-law .img-tit {
@@ -42,10 +43,9 @@ body {
 .txt-desc {
     width: 390px;
     height: 85px;
-    margin: 0px auto;
+    margin: 0px auto 102px;
     font-size: 18px;
     line-height: 24px;
-    text-align: center;
     color: white;
     position: relative;
 }
@@ -66,17 +66,71 @@ body {
     background-size: 42px 35px;
     position: absolute;
     left: 0px;
-    top: 0px;
+    top: 13px;
 }
 
 .txt-desc::after {
-    display: block;
-    width: 42px;
-    height: 35px;
-    content: "";
     background-image: url(../IMG/1mantime/txt-right.png);
-    background-size: 42px 35px;
-    position: absolute;
     right: 0px;
-    top: 0px;
+    left: auto;
+}
+
+.txt-wanabe,
+.txt-time {
+    color: white;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.txt-wanabe {
+    margin-bottom: 27px;
+}
+
+.txt-wanabe strong,
+.txt-time strong {
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 72px;
+    vertical-align: -15px;
+}
+
+.txt-wanabe input,
+.txt-time input {
+    width: 228px;
+    height: 57px;
+    margin: 0px 17px;
+    border: none;
+    border-radius: 7px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.btn-exc {
+    width: 565px;
+    height: 66px;
+    margin: 115px 0px 145px 0px;
+    background: yellow;
+    border-radius: 56px;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #5b2386;
+}
+
+.cont-footer {
+    margin: 257px 0px 70px 0px;
+}
+
+.cont-footer .img-footer {
+    display: block;
+    width: 125px;
+    height: 25px;
+    margin: 0px auto 20px auto;
+}
+
+.cont-footer .txt-footer {
+    font-size: 12px;
+    line-height: 17px;
+    color: white;
 }
