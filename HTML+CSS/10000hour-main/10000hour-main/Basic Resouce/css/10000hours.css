@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'), url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'), url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+
+/* result-loading */
+
+@keyframes rotate {
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "GmarketSansMedium";
+    background-color: #5B2386;
+    color: #fff;
+}
+
+
+/* 메인 콘텐츠 */
+
+#contents {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+
+/* 제목이미지 */
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.title .clock-img {
+    position: relative;
+    width: 265px;
+    height: 265px;
+}
+
+.title .title-img {
+    position: absolute;
+    width: 564px;
+}
+
+.title .title-img img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* 1만시간의 법칙 설명 */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.intro .intro-saying {
+    font-family: "OTEnjoystoriesBA";
+    font-size: 32px;
+    color: #f5df4d;
+    margin-bottom: 50px;
+}
+
+.intro .explain {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.intro .explain .quotes {
+    padding-top: 20px;
+}
+
+.intro .explain p {
+    position: absolute;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.intro .explain span {
+    font-family: 'GmarketSansBold';
+    font-size: 20px;
+}
